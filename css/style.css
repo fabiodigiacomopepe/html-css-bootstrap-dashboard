@@ -1,0 +1,64 @@
+/* regole GENERALI */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* regole HEADER */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+}
+
+
+/* regole MAIN - SEZIONE CENTRALE UNICA */
+main {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+}
+
+
+/* regole NAV - SINISTRA */
+.left-side {
+    height: 100%;
+    width: 80px;
+    background: url(../img/sidebar-bg.png);
+    background-color: #051e34;
+}
+
+
+/* regole CONTENUTO PRINCIPALE - DESTRA */
+.right-side {
+    height: 100%;
+    width: calc(100% - 80px);
+    overflow: scroll;
+}
+
+
+/* regole BARRA RIEPILOGO - SUPERIORE - BLU */
+.status {
+    width: 100%;
+    height: 200px;
+    background-color: #1b72e8;
+}
+
+
+/* MD */
+@media screen and (min-width:768px) {
+    .status {
+        height: 140px;
+    }
+}
+
+/* LG */
+@media screen and (min-width:992px) {
+    .left-side {
+        width: 140px;
+    }
+    
+    .right-side {
+        width: calc(100% - 140px);
+    }
+}
