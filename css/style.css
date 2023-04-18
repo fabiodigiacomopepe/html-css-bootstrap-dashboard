@@ -16,7 +16,7 @@ header .fa-solid {
 header {
     width: 100%;
     height: 80px;
-    background-color: #ffffff;
+    background-color: #f8f9fa;
 }
 
 .logo-mobile {
@@ -263,4 +263,29 @@ main {
     background-color: #f7f7f7;
     padding: 15px;
     border-bottom: 1px solid rgb(181, 176, 176);
+}
+
+.list-group {
+    padding: 15px 10px;
+}
+
+
+/* regole UTENTI ATTIVI */
+.utentiattivi {
+    border: 1px solid rgb(181, 176, 176);
+    border-radius: 8px;
+    margin: 20px 5px;
+}
+
+.utentiattivi img {
+    max-width: 100%;
+}
+
+.utentiattivi .text-big {
+    font-size: 20px;
+}
+
+.utentiattivi .underline {
+    text-decoration: underline;
+    color: blue;
 }
