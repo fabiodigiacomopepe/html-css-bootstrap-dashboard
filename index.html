@@ -19,11 +19,14 @@
         <header class="d-flex align-items-center">
             <div class="container-fluid">
                 <div class="row align-items-center">
+
+                    <!-- logo -->
                     <div class="col-2 col-sm-1 col-lg-2">
                         <img class="logo-mobile" src="img/mobile-logo.png" alt="logo-mobile">
                         <img class="logo-desktop" src="img/logo.svg" alt="logo-dekstop">
                     </div>
 
+                    <!-- barra ricerca -->
                     <div class="col-8 col-sm-10 col-lg-8">
                         <nav class="navbar bg-body-tertiary">
                             <div class="container-fluid">
@@ -34,7 +37,8 @@
                         </nav>
                     </div>
 
-                    <div class="col-2 col-sm-1 col-lg-2">
+                    <!-- icone - destra -->
+                    <div class="col-2 col-sm-1 col-lg-2 d-flex justify-content-end">
                         <i class="fa-solid fa-bars"></i>
                         <i class="fa-solid fa-circle-question"></i>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
@@ -49,8 +53,27 @@
         <main>
 
             <!-- parte sinistra - nav -->
-            <nav class="left-side">
+            <nav class="left-side d-flex flex-column justify-content-between text-center">
 
+                <!-- parte superiore -->
+                <div class="icon-nav-left">
+                    <div>
+                        <i class="fa-solid fa-house"></i><span>Home</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-chart-simple"></i><span>Stats</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-signal"></i><span>Signal</span>
+                    </div>
+                </div>
+
+                <!-- parte inferiore -->
+                <div class="icon-nav-left">
+                    <i class="fa-solid fa-gear"></i><span>Admin</span>
+                </div>
             </nav>
 
             <!-- parte destra - contenuto principale -->

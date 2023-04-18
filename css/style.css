@@ -3,8 +3,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.fa-solid {
+header .fa-solid {
     color: #5b5858;
+}
+
+.left-side .fa-solid {
+    color: white;
 }
 
 
@@ -72,6 +76,24 @@ main {
     width: 80px;
     background: url(../img/sidebar-bg.png);
     background-color: #051e34;
+    padding: 20px 0;
+    color: white;
+}
+
+.left-side .fa-solid {
+    font-size: 20px;
+    margin-top: 18px;
+}
+
+.icon-nav-left span {
+    display: none;
+}
+
+@media screen and (min-width:992px) {
+    .icon-nav-left span {
+        display: inline-block;
+        margin-left: 10px;
+    }
 }
 
 
