@@ -16,8 +16,32 @@
     <body>
 
         <!-- header -->
-        <header>
+        <header class="d-flex align-items-center">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-2 col-sm-1 col-lg-2">
+                        <img class="logo-mobile" src="img/mobile-logo.png" alt="logo-mobile">
+                        <img class="logo-desktop" src="img/logo.svg" alt="logo-dekstop">
+                    </div>
 
+                    <div class="col-8 col-sm-10 col-lg-8">
+                        <nav class="navbar bg-body-tertiary">
+                            <div class="container-fluid">
+                              <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                              </form>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="col-2 col-sm-1 col-lg-2">
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-circle-question"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                </div>
+            </div>
         </header>
 
 

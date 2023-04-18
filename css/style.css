@@ -3,6 +3,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.fa-solid {
+    color: #5b5858;
+}
+
 
 /* regole HEADER */
 header {
@@ -11,6 +15,48 @@ header {
     background-color: #ffffff;
 }
 
+.logo-mobile {
+    max-width: 60%;
+    min-width: 60px;
+}
+
+.logo-desktop {
+    display: none;
+}
+
+header .navbar.bg-body-tertiary .d-flex {
+    width: 100%;
+}
+
+.fa-solid.fa-bars,
+.fa-solid.fa-circle-question,
+.fa-solid.fa-ellipsis-vertical {
+    display: none;
+}
+
+.fa-solid.fa-bell {
+    color: orange;
+    font-size: 20px;
+}
+
+@media screen and (min-width:992px) {
+    .logo-mobile {
+        display: none;
+    }
+
+    .logo-desktop {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .fa-solid.fa-bars,
+    .fa-solid.fa-circle-question,
+    .fa-solid.fa-ellipsis-vertical,
+    .fa-solid.fa-bell {
+        display: inline-block;
+        padding: 0 8px;
+    }
+}
 
 /* regole MAIN - SEZIONE CENTRALE UNICA */
 main {
