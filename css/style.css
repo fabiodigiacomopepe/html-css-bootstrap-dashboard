@@ -15,6 +15,26 @@ header .fa-solid {
     color: white;
 }
 
+.prossimeclassi,
+.faq,
+.todo,
+.utentiattivi {
+    border: 1px solid rgb(181, 176, 176);
+    border-radius: 8px;
+    margin: 20px 5px;
+}
+
+.prossimeclassi h4,
+.faq h4,
+.todo h4 {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-bottom: 1px solid rgb(181, 176, 176);
+}
+
+
+
+
 
 /* regole HEADER */
 header {
@@ -47,7 +67,6 @@ header .form-control {
     left: 29px;
 }
    
-
 .fa-solid.fa-bars,
 .fa-solid.fa-circle-question,
 .fa-solid.fa-ellipsis-vertical {
@@ -67,7 +86,11 @@ header .form-control {
     right: 30px;
 }
 
-.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
     border-color: transparent;
 }
 
@@ -75,6 +98,8 @@ header .form-control {
     display: none;
 }
 
+
+/* LG */
 @media screen and (min-width:992px) {
     .logo-mobile {
         display: none;
@@ -94,12 +119,19 @@ header .form-control {
     }
 }
 
+
+
+
+
 /* regole MAIN - SEZIONE CENTRALE UNICA */
 main {
     width: 100%;
     height: calc(100vh - 80px);
     display: flex;
 }
+
+
+
 
 
 /* regole NAV - SINISTRA */
@@ -119,7 +151,7 @@ main {
 }
 
 .nav-left-section {
-    width: 70%;
+    width: 45%;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -140,20 +172,25 @@ main {
     display: none;
 }
 
-/* MD */
-@media screen and (max-width:991px) {
-    .nav-left-section {
-        width: 45%;
-    }
-}
 
 /* LG */
 @media screen and (min-width:992px) {
+    .left-side {
+        width: 140px;
+    }
+
     .icon-nav-left span {
         display: inline-block;
         margin-left: 10px;
     }
+
+    .nav-left-section {
+        width: 70%;
+    }
 }
+
+
+
 
 
 /* regole CONTENUTO PRINCIPALE - DESTRA */
@@ -162,6 +199,9 @@ main {
     width: calc(100% - 80px);
     overflow: scroll;
 }
+
+
+
 
 
 /* regole BARRA RIEPILOGO - SUPERIORE - BLU */
@@ -215,7 +255,12 @@ main {
     display: none;
 }
 
-.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+.offcanvas,
+.offcanvas-lg,
+.offcanvas-md,
+.offcanvas-sm,
+.offcanvas-xl,
+.offcanvas-xxl {
     --bs-offcanvas-width: 50%;
 }
 
@@ -227,8 +272,15 @@ main {
     margin-bottom: 1rem;
 }
 
+
+/* fino a SM */
 @media screen and (max-width:767px) {
-    .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+    .offcanvas,
+    .offcanvas-lg,
+    .offcanvas-md,
+    .offcanvas-sm,
+    .offcanvas-xl,
+    .offcanvas-xxl {
         --bs-offcanvas-width: 100%;
     }
 }
@@ -242,10 +294,6 @@ main {
 
 /* LG */
 @media screen and (min-width:992px) {
-    .left-side {
-        width: 140px;
-    }
-    
     .right-side {
         width: calc(100% - 140px);
     }
@@ -259,19 +307,11 @@ main {
     }
 }
 
+
+
+
+
 /* regole PROSSIME CLASSI */
-.prossimeclassi {
-    border: 1px solid rgb(181, 176, 176);
-    border-radius: 8px;
-    margin: 20px 5px;
-}
-
-.prossimeclassi h4 {
-    background-color: #f7f7f7;
-    padding: 15px;
-    border-bottom: 1px solid rgb(181, 176, 176);
-}
-
 .table > :not(caption) > * > * {
     padding: 0.5rem 1.5rem;
 }
@@ -279,15 +319,6 @@ main {
 .datainizio,
 .roi {
     display: none;
-}
-
-#tabella-prossime-classi {
-    display: none;
-}
-
-.classe {
-    border-top: 1px solid rgb(181, 176, 176);
-    border-bottom: 1px solid rgb(181, 176, 176);
 }
 
 .classavatar {
@@ -320,6 +351,11 @@ main {
     right: 7px;
 }
 
+#tabella-prossime-classi {
+    display: none;
+}
+
+
 /* MD */
 @media screen and (min-width:768px) {
     .datainizio,
@@ -328,44 +364,20 @@ main {
     }
 }
 
-/* regole FAQ */
-.faq {
-    border: 1px solid rgb(181, 176, 176);
-    border-radius: 8px;
-    margin: 20px 5px;
-}
 
-.faq h4 {
-    background-color: #f7f7f7;
-    padding: 15px;
-    border-bottom: 1px solid rgb(181, 176, 176);
-}
+
+
 
 /* regole TODO */
-.todo {
-    border: 1px solid rgb(181, 176, 176);
-    border-radius: 8px;
-    margin: 20px 5px;
-}
-
-.todo h4 {
-    background-color: #f7f7f7;
-    padding: 15px;
-    border-bottom: 1px solid rgb(181, 176, 176);
-}
-
 .list-group {
     padding: 15px 10px;
 }
 
 
-/* regole UTENTI ATTIVI */
-.utentiattivi {
-    border: 1px solid rgb(181, 176, 176);
-    border-radius: 8px;
-    margin: 20px 5px;
-}
 
+
+
+/* regole UTENTI ATTIVI */
 .utentiattivi .text-big {
     font-size: 20px;
 }
