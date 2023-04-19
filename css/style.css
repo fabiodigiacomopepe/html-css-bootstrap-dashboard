@@ -57,6 +57,22 @@ header .navbar.bg-body-tertiary .d-flex {
 .fa-solid.fa-bell {
     color: orange;
     font-size: 20px;
+    position: relative;
+    top: 2px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    position: absolute;
+    left: auto;
+    right: 30px;
+}
+
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+    border-color: transparent;
+}
+
+.dropdown-toggle::after {
+    display: none;
 }
 
 @media screen and (min-width:992px) {
