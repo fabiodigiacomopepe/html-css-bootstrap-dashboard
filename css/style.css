@@ -227,6 +227,12 @@ main {
     margin-bottom: 1rem;
 }
 
+@media screen and (max-width:767px) {
+    .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+        --bs-offcanvas-width: 100%;
+    }
+}
+
 /* MD */
 @media screen and (min-width:768px) {
     .status {
