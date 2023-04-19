@@ -98,13 +98,40 @@ main {
 
 .left-side .fa-solid {
     font-size: 20px;
-    margin-top: 18px;
+    padding: 10px 5px;
+    min-width: 35px;
+}
+
+.nav-left-section {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nav-left-section:hover {
+    background-color: #7c8895;
+    cursor: pointer;
+}
+
+.icon-nav-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .icon-nav-left span {
     display: none;
 }
 
+/* MD */
+@media screen and (max-width:991px) {
+    .nav-left-section {
+        width: 45%;
+    }
+}
+
+/* LG */
 @media screen and (min-width:992px) {
     .icon-nav-left span {
         display: inline-block;
