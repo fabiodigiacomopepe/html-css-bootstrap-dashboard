@@ -312,10 +312,6 @@ main {
 
 
 /* regole PROSSIME CLASSI */
-.table > :not(caption) > * > * {
-    padding: 0.5rem 1.5rem;
-}
-
 .datainizio,
 .roi {
     display: none;
