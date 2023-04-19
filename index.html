@@ -109,7 +109,6 @@
 
             <!-- parte destra - contenuto principale -->
             <div class="right-side">
-
                 <!-- barra superiore - blu -->
                 <div class="status">
                     <div class="container-fluid">
@@ -118,6 +117,81 @@
                                 <div class="new-student d-flex align-items-end gap-3">
                                     <h5>Nuovo studente</h5>
                                     <button type="button" class="btn btn-outline-light">+</button>
+
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                                        +
+                                      </button>
+                                      
+                                      <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                                        <div class="offcanvas-header">
+                                          <h5 class="offcanvas-title" id="staticBackdropLabel">Inserisci un nuovo studente</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                          <div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput2">
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="email-on-popup">Email</div>
+                                                <div class="input-group">     
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="exampleFormControlInput4">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput5">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Città</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput6">
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="email-on-popup">Stato</div>
+                                                <div class="input-group mb-3">
+                                                    <select class="form-select" id="inputGroupSelect02">
+                                                      <option selected>Scegli...</option>
+                                                      <option value="1">Italia</option>
+                                                      <option value="2">Germania</option>
+                                                      <option value="3">Svizzera</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Cap</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput8">
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="email-on-popup">Foto</div>
+                                                <div class="input-group mb-3">
+                                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                                  </div>
+                                            </div>
+                                            
+                                            <div class="form-check proseguire">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                  Seleziona per proseguire
+                                                </label>
+                                            </div>
+                                            <div class="mb-3">
+                                                <button type="button" class="btn btn-primary">Salva</button>
+                                                <button type="button" class="btn btn-warning">Svuota</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
                                 </div>
                             </div>
 
@@ -415,7 +489,7 @@
                                             </button>
                                           </h2>
                                           <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aut porro animi dicta repellendus sint quam doloremque similique, beatae harum natus voluptas ipsam sed molestias labore laudantium dignissimos fugit est?</div>
+                                            <div class="accordion-body">Clicca sul + in alto nella sezione blu.</div>
                                           </div>
                                         </div>
                                         <div class="accordion-item">
@@ -425,7 +499,7 @@
                                             </button>
                                           </h2>
                                           <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, similique vitae placeat numquam necessitatibus ut ad incidunt quos laboriosam fugit recusandae delectus. Blanditiis consequatur delectus architecto qui et natus iusto?</div>
+                                            <div class="accordion-body">Clicca sull'icona della campanella.</div>
                                           </div>
                                         </div>
                                         <div class="accordion-item">
@@ -435,7 +509,7 @@
                                             </button>
                                           </h2>
                                           <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur optio aliquid inventore nisi tempore placeat consequuntur officia, aut eveniet autem natus nesciunt laudantium unde, amet odit repudiandae ipsa sed recusandae.</div>
+                                            <div class="accordion-body">Ovviamente! Il tutto è responsive.</div>
                                           </div>
                                         </div>
                                     </div>
@@ -481,8 +555,7 @@
                                           <li class="list-group-item">Marzo: 1500</li>
                                           <li class="list-group-item"><span class="underline">Visualizza report approfondito</span></li>
                                         </ul>
-                                      </div>
-                                    <div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
