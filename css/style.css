@@ -3,6 +3,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+li {
+    list-style-type: none;
+}
+
 header .fa-solid {
     color: #5b5858;
 }
@@ -31,6 +35,18 @@ header {
 header .navbar.bg-body-tertiary .d-flex {
     width: 100%;
 }
+
+.form-control {
+    background-color: #e5e5e5;
+    padding: 0.375rem 2.5rem;
+}
+
+.fa-magnifying-glass {
+    position: relative;
+    top: 10px;
+    left: 29px;
+}
+   
 
 .fa-solid.fa-bars,
 .fa-solid.fa-circle-question,
@@ -142,6 +158,10 @@ main {
 .breadcrumb-item + .breadcrumb-item::before {
     content: var(--bs-breadcrumb-divider, "»");
     color: white;
+    scale: 2;
+    position: relative;
+    left: 5px;
+    bottom: 2px;
 }
 
 .breadcrumb-item.active.cross_none {
@@ -277,10 +297,6 @@ main {
     margin: 20px 5px;
 }
 
-.utentiattivi img {
-    max-width: 100%;
-}
-
 .utentiattivi .text-big {
     font-size: 20px;
 }
@@ -288,4 +304,13 @@ main {
 .utentiattivi .underline {
     text-decoration: underline;
     color: blue;
+}
+
+.utentiattivi .card {
+    margin: 20px;
+    border: 1px solid rgb(181, 176, 176);
+}
+
+.utentiattivi img {
+    max-width: 100%;
 }
